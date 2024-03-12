@@ -19,8 +19,18 @@ app.get('/add-Expense', function(request,response){
     //     "date":request.body.date
     // }
 })
+app.get('/',function(request,response){
+    // response.status(200).send("Hello!!")
+    const obj={
+        name:"Gayathri",
+        age:20
+    }
+    response.status(200).json(obj)
+})
+
 app.listen(port,function(){
     console.log(`listening @ port${port}`)
+    
     })
 
     }catch(error){
